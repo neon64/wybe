@@ -1,4 +1,3 @@
-{-# LANGUAGE TupleSections #-}
 --  File     : Types.hs
 --  Author   : Peter Schachte
 --  Purpose  : Type checker/inferencer for Wybe
