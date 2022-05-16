@@ -1,8 +1,3 @@
-# pragma no_standard_library  # Standard library can't depend on itself!
-# use wybe.char
-# use wybe.bool
-# use wybe.int
-
 use overloaded_print.mylist, overloaded_print.mybool
 
 pub def {impure} myprint(x: char) {

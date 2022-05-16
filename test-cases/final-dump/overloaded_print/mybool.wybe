@@ -1,9 +1,9 @@
-# pragma no_standard_library
-# use wybe.char
-# use wybe.bool
-
 use overloaded_print.myio
+
 # need THIS to get this to compile:
 # use overloaded_print.mylist
+#
+# I believe this shouldn't be correct behaviour, since we never
+# refer to the type `mylist` in this file (only indirectly in myio.wybe)
 
 pub def {impure} myprint(x:bool) { !myprint(' ') }

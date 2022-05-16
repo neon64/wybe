@@ -1,7 +1,3 @@
-# pragma no_standard_library  # Standard library can't depend on itself!
-# use wybe.char
-# use wybe.bool, wybe.int
-
 use overloaded_print.mybool, overloaded_print.myio
 
 pub constructors (T) mylist() | mylist(head:T, tail:_(T))
