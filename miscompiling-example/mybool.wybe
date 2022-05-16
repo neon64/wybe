@@ -1,0 +1,9 @@
+pragma no_standard_library
+
+use wybe.char
+use wybe.bool
+use myio
+# need THIS to get this to compile:
+# use mylist, myint
+
+pub def {impure} print(x:bool) { !myprint(' ') }

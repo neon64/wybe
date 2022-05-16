@@ -1,0 +1,12 @@
+# purpose: Standard List type
+# since  : 0.1
+
+pragma no_standard_library  # Standard library can't depend on itself!
+
+# use wybe.bool, wybe.int
+use mybool, myio
+use wybe.char
+# use wybe.string, wybe.c_string, wybe.char, wybe.range, wybe.phantom, wybe.count, wybe.float
+use wybe.bool, wybe.int
+
+pub constructors (T) mylist() | mylist(head:T, tail:_(T))

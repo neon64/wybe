@@ -19,19 +19,3 @@ pub def {inline} nl use !io { foreign c putchar('\n', !io) }
 
 # XXX see nl for inline note
 pub def {inline} eof:char = foreign lpvm cast(-1)
-
-pub def print(x:list(list(int))) use !io {
-    !print("[")
-    !_print_list(x)
-    !print("]")
-}
-
-def _print_list(xs:list(list(int))) use !io {
-    if { [?x | ?xs1] = xs ::
-        !list.print(x, int.print)
-        if { [ ?x2 | ?xs2 ] = xs1 ::
-            !print(", ")
-        }
-        !_print_list(xs1)
-    }
-}
