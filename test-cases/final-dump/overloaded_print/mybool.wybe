@@ -4,6 +4,6 @@
 
 use overloaded_print.myio
 # need THIS to get this to compile:
-# use mylist, myint
+# use overloaded_print.mylist
 
-pub def {impure} print(x:bool) { !myprint(' ') }
+pub def {impure} myprint(x:bool) { !myprint(' ') }
