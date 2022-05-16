@@ -1,0 +1,3 @@
+use overloaded_print.mybool
+
+!myprint(false)

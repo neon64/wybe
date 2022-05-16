@@ -1,8 +1,8 @@
-pragma no_standard_library
+# pragma no_standard_library
+# use wybe.char
+# use wybe.bool
 
-use wybe.char
-use wybe.bool
-use myio
+use overloaded_print.myio
 # need THIS to get this to compile:
 # use mylist, myint
 
