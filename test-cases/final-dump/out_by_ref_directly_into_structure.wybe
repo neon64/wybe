@@ -1,0 +1,10 @@
+use wybe.int, wybe.list
+
+constructors (T) out_by_ref_directly_into_structure(x: int, y: list(T))#, y: list(int))
+
+?x: list(int) = [1,2,3]
+?x2: list(int) = [4,5,6]
+# consider the case where we have some out by reference
+?x3: int = 7#+93*2
+?x4: list(int) = x ,, x2
+?t: out_by_ref_directly_into_structure(int) = out_by_ref_directly_into_structure(x3, x4)
