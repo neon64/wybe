@@ -12,7 +12,11 @@ def fib(x: int) = if {
     }
 }
 
-!benchmark.cpu_time({impure} { ?@1 = fib(42) }, ?out, ?time)
-!print(time)
+pub def {semipure} need(stmt:{impure,resource}()) {!stmt}
+
+!need({impure,resource} {
+    !benchmark.cpu_time({impure} { ?@1 = fib(42) }, ?out, ?time)
+    !println(time)
+})
 
 !benchmark.benchmark({impure} { ?@1 = fib(42) })
